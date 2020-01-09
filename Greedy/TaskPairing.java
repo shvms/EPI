@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Greedy 18.1
  */
-public class Greedy_18_1 {
+public class TaskPairing {
     List<Integer> optimum_assignment(List<Integer> tasks, int N) {
         Collections.sort(tasks);
         List<Integer> assignment = new ArrayList<>();
@@ -20,7 +20,7 @@ public class Greedy_18_1 {
     }
 
     public static void main(String[] args) {
-        Greedy_18_1 obj = new Greedy_18_1();
+        TaskPairing obj = new TaskPairing();
 
         ArrayList<Integer> tasks = new ArrayList<>(Arrays.asList(5, 2, 1, 6 ,4, 4));
         int N = 6;
